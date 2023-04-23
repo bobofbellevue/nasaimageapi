@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="NASA Image API Project">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/621f3ac402.js" crossorigin="anonymous"></script>
+    <title>NASA Imagery</title>
+  </head>
+  <body>
+    <section id="gallery" class="gallery" data-sort="oldest">
+      <h2 id="skip-h2">NASA Image Gallery</h2>
+      <div id="skip-sortby-gallery" class="sortby">
+	<span>Choose year:</span>
+	<select name="year" id="year">
+	  <option value="2023">2023</option>
+	  <option value="2022">2022</option>
+	  <option value="2021">2021</option>
+	  <option value="2020">2020</option>
+	  <option value="2019">2019</option>
+	  <option value="2018">2018</option>
+	  <option value="2017">2017</option>
+	  <option value="2016">2016</option>
+	  <option value="2015">2015</option>
+	  <option value="2014">2014</option>
+	  <option value="2013">2013</option>
+	  <option value="2012">2012</option>
+	</select>
+	<span>&nbsp;&nbsp;&nbsp;Sort by:</span>
+	<input type="radio" class="sort-radios" data-gallery="gallery" data-sort="oldest" name="gal-sortby" value="gal-date-old" checked><label for="gal-date-old">Date (oldest first)</label>
+	<input type="radio" class="sort-radios" data-gallery="gallery" data-sort="newest" name="gal-sortby" value="gal-date-new"><label for="gal-date-new">Date (newest first)</label>
+	<input type="radio" class="sort-radios" data-gallery="gallery" data-sort="az" name="gal-sortby" value="gal-title-az"><label for="gal-title-az">Title (A-Z)</label>
+	<input type="radio" class="sort-radios" data-gallery="gallery" data-sort="za" name="gal-sortby" value="gal-title-za"><label for="gal-title-za">Title (Z-A)</label>
+      </div>
+      <p id="skip-centers" class="centers"></p>
+      <p id="skip-photographers" class="photographers"></p>
+    </section>
+    <section id="favorites" class="favorites" data-sort="oldest">
+      <h2 id="skip-favorites">My Favorites</h2>
+      <div id="skip-sortby-favorites" class="sortby">
+	<span>Sort by:</span>
+	<input type="radio" class="sort-radios" data-gallery="favorites" data-sort="oldest" name="fav-sortby" value="fav-date-old" checked><label for="fav-date-old">Date (oldest first)</label>
+	<input type="radio" class="sort-radios" data-gallery="favorites" data-sort="newest" name="fav-sortby" value="fav-date-new"><label for="fav-date-new">Date (newest first)</label>
+	<input type="radio" class="sort-radios" data-gallery="favorites" data-sort="az" name="fav-sortby" value="fav-title-az"><label for="fav-title-az">Title (A-Z)</label>
+	<input type="radio" class="sort-radios" data-gallery="favorites" data-sort="za" name="fav-sortby" value="fav-title-za"><label for="fav-title-za">Title (Z-A)</label>
+      </div>
+    </section>
+    <script src="nasa.js"></script>
+  </body>
+</html>

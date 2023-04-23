@@ -1,0 +1,76 @@
+.gallery,
+.favorites {
+  margin: 5rem auto  5rem  auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: ivory;
+  border: 3px solid red;
+  border-radius: 8px;
+  width: 80%;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.gallery img,
+.favorites img {
+  width: 100%;
+  max-width: 15rem;
+  border: 1px solid red;
+  border-radius: 8px;
+}
+
+.gallery h2,
+.favorites h2 {
+  color: ivory;
+  background-color: red;
+  min-width: 100%;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+
+#skip-centers,
+#skip-photographers {
+  color: ivory;
+  background-color: red;
+  min-width: 100%;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.gallery h4,
+.favorites h4 {
+  color: red;
+  width: 100%;
+  max-width: 15rem;
+  display: inline-block;
+}
+
+.sortby {
+  color: red;
+  font-weight: 700;
+  width: 100%;
+  display: inline-block;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+.sortby select {
+  color: red;
+  font-weight: 700;
+  border: 1px solid red;
+  background-color: ivory;
+}
+
+.gallery i,
+.favorites i,
+.gallery p,
+.favorites p {
+  color: red;
+  width: 100%;
+  max-width: 15rem;
+  display: inline;
+}
